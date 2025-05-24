@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.main_box {
+  background-image: url("photo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
+.btn_one {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  left: 16px;
+  line-height: 60px;
+  z-index: 2;
+}
+
+.sidebar_menu {
+  position: fixed;
+  left: -300px;
+  height: 100vh;
+  width: 300px;
+
+  background-color: rgb(78, 73, 73, 0.8);
+  transition: all 200ms;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+}
+
+.sidebar_menu .logo {
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+  line-height: 60px;
+}
+.sidebar_menu .logo a {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  text-decoration: none;
+}
+
+@keyframes animator {
+}
+
+.sidebar_menu .menu {
+  color: white;
+  position: absolute;
+  width: 100%;
+  top: 80px;
+}
+
+.btn_two {
+  color: gray;
+  font-size: 25px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.sidebar_menu .menu li {
+  margin-top: 6px;
+  padding: 10px 20px;
+}
+
+.sidebar_menu .menu i,
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.sidebar_menu .menu i {
+  padding-right: 10px;
+}
+
+.sidebar_menu .social_media {
+  position: absolute;
+  color: white;
+  bottom: 15px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 0 5px;
+
+}
+
+
+#check {
+  display: none;
+}
+
+.sidebar_menu .menu li:hover {
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+.btn_one i:hover {
+  font-size: 35px;
+  transition: all 200ms;
+}
+
+.btn_two i:hover {
+  font-size: 30px;
+  transition: all 200ms;
+}
+
+.sidebar_menu .social_media i {
+  margin: 5px;
+  opacity: 0.5;
+}
+
+
+.sidebar_menu .social_media i:hover {
+  opacity: 1;
+  transform:scale( 1.1);
+}
+
+
+#check:checked ~ .sidebar_menu{
+  left:0;
+
+}
+
+#check:checked ~ .btn_one i{
+  opacity: 0;
+}
