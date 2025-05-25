@@ -1,0 +1,36 @@
+
+@media screen and (max-width: 995px) {
+    .card3{
+    margin-bottom: 10px;
+}
+    *{
+    transition: all 500ms;
+    }
+  .container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+  }
+  .card1,
+  .card2 {
+    flex: 1 1 45%;
+    margin-bottom: 10px;
+  }
+  .card1{
+    margin-right: 5px;
+  }
+  .card2{
+    margin-left: 5px;
+  }
+  .card3 {
+    width: 100em;
+    flex: 1 1 100%;
+  }
+}
+
+@media screen and (min-width: 995px){
+    *{
+        transition: all 500ms;
+    }
+} 
