@@ -50,6 +50,8 @@
   text-decoration: none;
 }
 
+@keyframes animator {
+}
 
 .sidebar_menu .menu {
   color: white;
@@ -129,5 +131,5 @@ a {
 }
 
 #check:checked ~ .btn_one i{
-  display:none;
+  display: none;
 }
