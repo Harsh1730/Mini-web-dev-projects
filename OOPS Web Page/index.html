@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OOPS Concepts</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #222;
+      margin: 0;
+      padding: 40px;
+    }
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 0 0 10px 10px;
+    }
+    .section {
+      background: #fff;
+      border-radius: 10px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    }
+    h2 {
+      color: #34495e;
+      border-left: 4px solid #3498db;
+      padding-left: 10px;
+    }
+    h3 {
+      color: #2c3e50;
+      margin-top: 20px;
+    }
+    p, ul {
+      line-height: 1.7;
+      margin: 10px 0;
+    }
+    ul {
+      padding-left: 25px;
+    }
+    pre {
+      background: #ecf0f1;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+      margin: 10px 0;
+    }
+    strong {
+      color: #2c3e50;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background: #e9f1fb;
+    }
+    .note {
+      background: #fff8c4;
+      border-left: 4px solid #f7d400;
+      padding: 10px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Object Oriented Programming (OOPS) Concepts</h1>
+  </header>
+
+  <div class="section">
+    <h2>1. Encapsulation</h2>
+    <p>Encapsulation is the process of wrapping up of data and methods into a single unit called class. It is a protective shield that 
+    prevents the data from being accessed by the code outside this shield. It is a mechanism that restricts direct access to some of 
+    the objects components. Encapsulation is used to hide the values or state of a structured data object inside a class, preventing
+    unauthorized partie's direct access to them. Encapsulation is used to restrict direct access to some of the object's components.
+    Encapsulation is also known as data hiding. Encapsulation can be achieved by declaring all the variables in the class as private
+    and writing public methods in the class to set and get the values of variables ussing diffrent access specifiers.</p>
+
+    <div class="note">
+      <strong>a. Constructor:</strong> Constructor is a special type of method that is used to initialize the object.
+      <ul>
+        <li>It is called when an object of the class is created.</li>
+        <li>It is used to set the initial values of the object.</li>
+        <li>//constructor name is same as class name.</li>
+        <li>//constructor dont have return type.</li>
+        <li>//constructor is called when object is created.</li>
+        <li>//constructor can only be called once.</li>
+        <li>//memory is allocated to object when constructor is called.</li>
+      </ul>
+      <p><strong>Types of Constructor:</strong></p>
+      <ul>
+        <li><strong>Default Constructor:</strong> A constructor that has no parameters is known as a default constructor.</li>
+        <li><strong>Parameterized Constructor:</strong> A constructor that has parameters is known as a parameterized constructor.</li>
+        <li><strong>Copy Constructor:</strong> A constructor that initializes an object using another object of the same class is known as a copy constructor.</li>
+      </ul>
+      <p><strong>Constructor overloading:</strong> it is the condition when user define more than one constructor in a class with different parameters.</p>
+      <p><strong>Constructor chaining:</strong> Constructor chaining is the process of calling one constructor from another constructor with respect to the current object.</p>
+    </div>
+
+    <div class="note">
+      <strong>b. Destructor:</strong> Destructor is a special type of method that is called when an object is destroyed. It is used to release the 
+      resources that are allocated to the object. Destructor is a special type of method that is called when an object
+      is destroyed. It is used to release the resources that are allocated to the object. Destructor is a special type
+      of method that is called when an object is destroyed. It is used to release the resources that are allocated to 
+      the object. Destructor is a special type of method that is called when an object is destroyed. It is used to 
+      release the resources that are allocated to the object.
+      <ul>
+        <li>//destructor name is same as class name with ~ sign.</li>
+        <li>//destructor dont have return type.</li>
+        <li>//destructor is called when object is destroyed.</li>
+        <li>//destructor can only be called once.</li>
+        <li>//memory is deallocated to object when destructor is called.</li>
+      </ul>
+      <p><strong>IN JAVA THERE IS NO DESTRUCTOR BECAUSE JAVA HAS GARBAGE COLLECTOR.</strong></p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>2. Abstraction</h2>
+    <p>Abstraction is the concept of hiding the complex implementation details from the user and only providing the necessary details.
+    It is one of the most important concepts of OOPs. Abstraction is the process of hiding the implementation details and showing 
+    only the functionality to the user. Abstraction is used to only show the necessary features of the object.
+    Abstraction is achieved by using abstract classes and interfaces. An abstract class is a class that 
+    cannot be instantiated and is used to define the base class of other classes. An interface is a reference type in Java that is
+    similar to class. It is a collection of abstract methods. A class can implement an interface.
+    //data hiding</p>
+
+    <div class="note">
+      <strong>a. Abstract Class:</strong> An abstract class is a class that cannot be instantiated and is used to define the base class of other classes.
+      <ul>
+        <li>//cannot create instance of abstract class.</li>
+        <li>//abstract class can have abstract and non abstract methods.</li>
+        <li>//abstract class can have constructor.</li>
+      </ul>
+      <strong>b. Interface:</strong> An interface is a reference type in Java that is similar to class. It is a collection of abstract methods. A class 
+      can implement an interface.
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>3. Inheritance</h2>
+    <p>Inheritance is the mechanism in which one class acquires the properties and behavior of another class. It represents the 
+    <strong>IS-A</strong> relationship. It is one of the most important concepts of OOPs. Inheritance is used to define the relationship
+    between two classes. Inheritance is achieved by using the <code>extends</code> keyword. The class that is inherited is known as the parent class
+    or superclass. The class that inherits the other class is known as the child class or subclass. Inheritance is used for code 
+    reusability and method overriding.</p>
+
+    <h3>a. Types of Inheritance:</h3>
+
+    <h4>1. Single Inheritance:</h4>
+    <p>Single inheritance is a type of inheritance in which a class inherits only single class. It is one of the most important concepts of OOPs.
+    <pre>//class A extends B</pre></p>
+
+    <h4>2. Multiple Inheritance:</h4>
+    <p>Multiple inheritance is a feature in which a class can inherit from more than one superclass. However, Java does not support multiple inheritance with classes to avoid 
+    ambiguity (the Diamond Problem). Instead, multiple inheritance in Java is achieved using interfaces.</p>
+    <ul>
+      <li><strong>Java Does Not Support Multiple Inheritance with Classes:</strong>
+        <ul>
+          <li>*A class cannot inherit from multiple classes in Java using extends.</li>
+          <li>*This prevents conflicts when multiple parent classes have the same method signature.</li>
+        </ul>
+      </li>
+      <li><strong>Java Supports Multiple Inheritance Using Interfaces:</strong>
+        <ul>
+          <li>*A class can implement multiple interfaces using implements.</li>
+          <li>*Since interfaces only contain abstract methods (before Java 8) or default methods (after Java 8), no ambiguity arises.</li>
+        </ul>
+      </li>
+      <li><strong>Diamond Problem Solution:</strong>
+        <ul>
+          <li>*Since Java does not allow multiple class inheritance, it avoids the diamond problem, where a class could inherit the same method from two different parent classes.</li>
+        </ul>
+      </li>
+    </ul>
+    <pre>//class A extends B</pre>
+
+    <h4>3. Hierarchical Inheritance:</h4>
+    <p>Hierarchical inheritance is a type of inheritance in Java where multiple subclasses inherit from a single parent class. This means a single base class (superclass) acts as 
+    a common ancestor for multiple derived classes (subclasses).
+    Multiple Child Classes: In hierarchical inheritance, multiple child classes share a common base class but have their own individual features.</p>
+    <ul>
+      <li>*Code Reusability: The common properties and methods are inherited from the parent class, reducing code duplication.</li>
+      <li>*Method Overriding: Subclasses can override the methods of the parent class to provide specific implementations.</li>
+      <li>*Supports Polymorphism: Since multiple child classes inherit from the same parent, polymorphism can be achieved through method overriding.</li>
+      <li>*Java Does Not Support Multiple Inheritance: While a class can have multiple child classes, a subclass cannot inherit from multiple classes directly due to Java’s restriction on 
+      multiple inheritance (avoiding ambiguity).</li>
+      <li>*Super Keyword Usage: The super keyword is used to call parent class methods or constructors in subclasses.</li>
+    </ul>
+    <pre>//class A extends B</pre>
+
+    <h4>4. Hybrid Inheritance:</h4>
+    <p>Hybrid inheritance is a combination of two or more types of inheritance, such as single, multilevel, hierarchical, and multiple inheritance. Java does not support hybrid 
+    inheritance with classes due to the restriction on multiple inheritance (to avoid ambiguity). However, it can be achieved using interfaces.</p>
+    <ul>
+      <li>*Combination of Different Inheritance Types: It combines single, multilevel, hierarchical, and multiple inheritance.</li>
+      <li>*Java Restriction on Multiple Class Inheritance: Java does not allow multiple inheritance with classes, preventing hybrid inheritance directly.</li>
+      <li>*Achieved Using Interfaces: Hybrid inheritance can be implemented by using interfaces instead of classes.</li>
+      <li>*Avoids Diamond Problem: Since Java allows multiple inheritance through interfaces, it prevents method ambiguity.</li>
+    </ul>
+
+    <h4>5. Multilevel Inheritance:</h4>
+    <p>A subclass (Child) inherits from a superclass (Parent), and another subclass (GrandChild) inherits from Child.
+    Forms a chain of inheritance.
+    <pre>//class A extends B</pre></p>
+  </div>
+
+  <div class="section">
+    <h2>4. Polymorphism</h2>
+    <p>Poly means many and morphism means forms.
+    Polymorphism is the ability of a variable, function or object to take multiple forms. It is one of the most important concepts 
+    of OOPs. Polymorphism is used to define the many methods in a single class. It is achieved by using method overloading 
+    and method overriding. Method overloading is a concept of having two or more methods with the same name in a class with different 
+    parameters. Method overriding is a concept of having two methods with the same name and same parameters in two different classes.</p>
+
+    <div class="note">
+      <strong>a. Compile time Polymorphism:</strong> Compile time polymorphism is a type of polymorphism in which the method is called at compile time.
+      It is also known as static binding or early binding. Compile time polymorphism is achieved by method overloading. Method 
+      overloading is a concept of having two or more methods with the same name in a class with different parameters.
+      <pre>//method overloading</pre>
+    </div>
+
+    <div class="note">
+      <strong>b. Run time Polymorphism:</strong> Run time polymorphism is a type of polymorphism in which the method is called at run time. It is also 
+      known as dynamic binding or late binding. Run time polymorphism is achieved by method overriding. Method overriding is a concept 
+      of having two methods with the same name and same parameters in two different classes.
+      <pre>//method overriding
+//abstract class and interface.
+//abstract class is a class that cannot be instantiated and is used to define the base class of other classes.
+//interface is a reference type in Java that is similar to class. It is a collection of abstract methods.
+//A class can implement an interface.</pre>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Access Specifiers</h2>
+    <p>//Private classes are not useful in java because they are not accessible from outside the class.</p>
+    <p>//Protected classes are not useful in java because they are not accessible from outside the package.</p>
+    <p>//Default classes are useful in java because they are accessible from outside the package.</p>
+    <p>//Public classes are useful in java because they are accessible from anywhere.</p>
+    <p>//child object can be given to reference of parent class but parent object cannot be given to reference of child class.</p>
+    <p>// reference of parent class can not access the methods of child class.</p>
+
+    <table>
+      <tr>
+        <th>Access Modifier</th><th>Default</th><th>Private</th><th>Protected</th><th>Public</th>
+      </tr>
+      <tr>
+        <td>Same Class</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td>
+      </tr>
+      <tr>
+        <td>Same Package Subclass</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td>
+      </tr>
+      <tr>
+        <td>Same Package Non-Subclass</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td>
+      </tr>
+      <tr>
+        <td>Different Package Subclass</td><td>No</td><td>No</td><td>Yes</td><td>Yes</td>
+      </tr>
+      <tr>
+        <td>Different Package Non-Subclass</td><td>No</td><td>No</td><td>No</td><td>Yes</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Static Keyword</h2>
+    <p>The static keyword in Java is used for memory management mainly. It can be used with variables, methods, blocks, and nested classes. 
+    The static keyword belongs to the class than an instance of the class.</p>
+    <div class="note">
+      <strong>a. Static Variables:</strong> Static variables are also known as class variables. They are shared among all the instances of the class. 
+      Static variables are initialized only once, at the start of the execution. A single copy of the static variable 
+      is created and shared among all the instances of the class. Static variables are created at the start of the 
+      program execution and destroyed automatically when the program ends.
+      <pre>//static int count=0;</pre>
+
+      <strong>b. Static Methods:</strong> Static methods are also known as class methods. They can be called without creating an instance of the class. 
+      Static methods can access static variables and static data directly. They cannot access non-static data members 
+      or call non-static methods directly. Static methods are used to create utility functions that perform tasks not 
+      dependent on instance creation.
+      <pre>//static void display() { ... }</pre>
+
+      <strong>c. Static Blocks:</strong> Static blocks are used for static initializations of a class. This code inside the static block is executed only 
+      once: the first time the class is loaded into memory. A static block is also known as a static initialization block.
+      <pre>//static { ... }</pre>
+
+      <strong>d. Static Classes:</strong> A static class is a class that cannot be instantiated. It can contain only static members. Static classes are 
+      used to create utility classes that contain static methods and variables.
+      <pre>//static class MyClass { ... }</pre>
+    </div>
+  </div>
+
+</body>
+</html>
