@@ -1,0 +1,57 @@
+body {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+button {
+    margin: 100px;
+    border: 10px solid black;
+    height: 50px;
+    width: 150px;
+    border-radius: 30px;
+    background-color: #59e5f7;
+}
+
+.Container {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+}
+
+.Container div {
+    height: 30vw;
+    width: 30vw;
+    border: 10px solid black;
+    border-radius: 30px;
+    margin: 10px;
+    caret-color: transparent;
+    max-width: 200px;
+max-height: 200px;
+}
+
+.box1 {
+    background-color: #FF6F61;
+    /* Coral Red */
+}
+
+.box2 {
+    background-color: #4F8EF7;
+    /* Soft Blue */
+}
+
+.box3 {
+    background-color: #43D19E;
+    /* Mint Green */
+}
+
+.box4 {
+    background-color: #FFD166;
+    /* Warm Yellow */
+}
